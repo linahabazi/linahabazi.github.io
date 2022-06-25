@@ -2,9 +2,7 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-        {{ $homeIndex := "homeindex" }}
-        {{ $title := lower .Title }}
-        <div id="content {{ if eq $homeIndex $title }}home{{ end }}">
+        <div class="content {{ if eq `home` (lower .Title) }}home{{ end }}">
             {{ partial "sidebar" . }}
             {{ block "main" . }}{{end}}
         </div>

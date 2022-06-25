@@ -53,3 +53,12 @@ a:hover {
 p, h2, h5 {
   color: $dark-blue-grey;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content.home {
+    flex-direction: row-reverse;
+}

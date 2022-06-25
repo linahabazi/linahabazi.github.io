@@ -5,21 +5,19 @@
 
 <nav class="sidebar">
     <div class="sidebarContent">
-    {{ $title := lower .Title }}
-    {{ if ne $title "homeindex" }}
+    {{ if ne (lower .Title) "home" }}
         <div class="accentImage">
         <img src="{{ $heroData.heroImage }}" />
         </div>
     {{ end }}
     <div class="sidebarLinks">
-        {{ $homeIndex := "homeindex" }}
-        <div class="title {{ if eq $homeIndex $title }}active{{ end }}">
+        <div class="title {{ if eq `home` (lower .Title) }}active{{ end }}">
         <a href="/">Lina<br>Habazi</a>
         </div>
-        <div class="nav pb-1">
+        <div class="nav">
         {{ range .Site.Params.navlinks}}
             {{ if ne .draft true }}
-            <div class="navLink {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
+            <div class="navLink {{ if eq .name (lower .Title) }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
             {{ end }}
         {{ end }}
         </div>
