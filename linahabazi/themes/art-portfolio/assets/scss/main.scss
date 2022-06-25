@@ -1,3 +1,55 @@
-body {
-    background-color: red;
+//               //
+// Custom styles //
+//               //
+
+//--- colors ---//
+
+$dark-blue-grey: #36363a;
+$mid-blue-grey: #73737f;
+$warm-off-white: #fffef9;
+
+// turquoise accent
+$accent: #19d0b2;
+$dark-accent: #13a38b;
+
+// raspberry accent
+// $accent: #d01941;
+// $dark-accent: #a31332;
+
+//--- imports ---//
+
+// @import "portfolio";
+// @import "bio";
+// @import "hero";
+// @import "sidebar";
+// @import "cv";
+// @import "form-reset";
+
+//--- general ---//
+
+html,body {
+  height: 100%;
+  background-color: $warm-off-white;
+}
+
+// img {
+//   max-width: 100%;
+// }
+
+.pageTitle {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-blue-grey;
+  transition: 0.2s;
+}
+a:hover {
+  text-decoration: none;
+  color: $accent;
+}
+
+p, h2, h5 {
+  color: $dark-blue-grey;
 }

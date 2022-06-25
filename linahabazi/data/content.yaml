@@ -1,0 +1,61 @@
+---
+images:
+  logo: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+  favicon: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+  aboutProfile: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+artwork:
+  silkscreen:
+    seriesTitle: Silkscreen Prints 2018-2020
+    medium: Silkscreen
+    tags: [printmaking, silkscreen]
+    womansVoice:
+      title: A Woman's Voice is a Revolution
+      year: 2018
+      dimensions: 11" x 17"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: womansVoice
+      tags: [arabic]
+    mintTea:
+      title: Mint Tea
+      year: 2020
+      dimensions: 5" x 7"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: mintTea
+      tags: [arabic]
+  relief:
+    seriesTitle: Relief Monoprints
+    medium: Relief
+    tags: [printmaking, relief]
+    kuffiyehscope:
+      title: Kuffiyehscope
+      year: 2021
+      dimensions: 24" x 30"
+      image: https://lh3.googleusercontent.com/l4lEaAzizsjoF4DsTxNT8n1D1FUcNvlLn_HCT_mcOBkg-qR-aqCd4xfmzK8eIC_cf8ZWmCUD9ZwfQszw1gJuqVAI8Ntnt6nCgPELSeqaVaayNLc6xln6iqPJiXZHmjgMtDu3M8Ctn8KH4yIyAcUYZdPhqSYPaUAW6hUo69vvIRbSaaOHxoYW3X8zIIO4py1173sa2v0LdwjJSx57e0F6zyep3rNUOVkCn4KvJmJvxywRNx4wg4c2O9ZTYnK9lv1iFzuBlIaRbJt4BuiKwonBetpOHkygRMDQuD9j7OhkYImW9ngnOm4I6iDbHOTmqqsMiP5V6oHViZKPgH7b9BwLAB_t4dk1qLivMzgrYhhgkOL_1pIdHgRayVJpZVItp0WurKUKtM1mqpxRsyN5_wh7tRl_IxTvi7UfsRf-6OCCL0ZB8Y3F3kXDskMVxjmqA3KebeU51nBQquAHTQxpP1vPPLdpub2LEZQDO3wHI2G7dMneJJ-4wLhJf-X9ANKzDXdl2b5GQWrWzqmjjPbQpdmCfOMRbRAbsFiesvyMMVS7L2mJ1NzUwoIvuU1Jm40USbhUeySP8nX1rbWYhXJGuarP92UUpGVHZ9fTnb-W_YG2muCIaAInEvEcaggcSC93l_CRxwmqlUmJbXa3BwlfqKNDoHD0JUwtDZjTipeU4Kgd1_BFPeqU56Vsb-ujWXmGPSCUMwwDQRpK9DmTPOIvBCOSfhfclFILggyI1RRIxKRvXjMZAn3oYhAJbZnB14TiG8nVvc8nbYu6VVnE-aSjXKlji_DmIHp1e1t8-uY=w1124-h1376-no?authuser=1
+      heroImage: "https://picsum.photos/300/1000"
+      imageId: kuffiyehscope
+      tags: [palestine]
+    iAmFree:
+  asymmetry:
+    seriesTitle: >
+      Asymmetry: Xerographic Collages
+    medium: Silkscreen
+    tags: [printmaking, silkscreen, xerography, xerox art, scanner art, palestine]
+    failedClone:
+      title: Failed Clone
+      year: 2021
+      dimensions: 24" x 30"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: failedClone
+    orphanChild:
+      title: Orphan Child
+      year: 2021
+      dimensions: 24" x 30"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: orphanChild
+    opposingForces:
+      title: Opposing Forces
+      year: 2021
+      dimensions: 24" x 30"
+      image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
+      imageId: opposingForces
+...
