@@ -6,6 +6,12 @@
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $style := 
+        resources.Get "scss/main.scss" |
+        resources.ExecuteAsTemplate "scss/main.scss" . |
+        resources.ToCSS |
+        resources.Fingerprint
+    }}
+    
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
 </head>

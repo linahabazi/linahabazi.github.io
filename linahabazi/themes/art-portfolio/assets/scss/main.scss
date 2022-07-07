@@ -16,6 +16,19 @@ $dark-accent: #13a38b;
 // $accent: #d01941;
 // $dark-accent: #a31332;
 
+//---- fonts ----//
+
+$fonts: (
+  "Lato",
+  "Raleway",
+  "Roboto",
+);
+$fontsList: "";
+@each $font in $fonts {
+  $fontsList: $fontsList + $font + "|";
+};
+@import url("http://fonts.googleapis.com/css?family=#{$fontsList}");
+
 //--- imports ---//
 
 // @import "portfolio";
@@ -30,6 +43,9 @@ $dark-accent: #13a38b;
 html,body {
   height: 100%;
   background-color: $warm-off-white;
+  margin: 0;
+  overscroll-behavior: none;
+  font-family: Lato;
 }
 
 // img {
@@ -57,8 +73,11 @@ p, h2, h5 {
 .content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .content.home {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
 }
