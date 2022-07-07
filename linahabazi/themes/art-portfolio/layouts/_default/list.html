@@ -1,2 +1,5 @@
 {{ define "main" }}
+    {{ if eq .Title "Portfolio" }}
+    {{ partial "portfolio.html" . }}
+    {{ end }}
 {{ end }}

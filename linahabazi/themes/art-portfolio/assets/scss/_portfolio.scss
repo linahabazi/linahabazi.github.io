@@ -1,0 +1,18 @@
+.portfolioContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .work{
+    .image{
+      max-width: 600px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      // max-width: 800px;
+      // background-color: gray;
+      margin-bottom: 20px;
+    }
+  }
+}
