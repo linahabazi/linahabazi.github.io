@@ -18,16 +18,9 @@ $dark-accent: #13a38b;
 
 //---- fonts ----//
 
-$fonts: (
-  "Lato",
-  "Raleway",
-  "Roboto",
-);
-$fontsList: "";
-@each $font in $fonts {
-  $fontsList: $fontsList + $font + "|";
-};
-@import url("http://fonts.googleapis.com/css?family=#{$fontsList}");
+$fonts: "Lato|Raleway|Roboto";
+
+@import url("http://fonts.googleapis.com/css?family=#{$fonts}");
 
 //--- imports ---//
 
@@ -70,15 +63,47 @@ p, h2, h5 {
   color: $dark-blue-grey;
 }
 
-.content {
+.root {
+  display: flex;
+
+  .content {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+
+    .main{
+      height: 100%;
+      padding: 50px 0 50px 0;
+    }
+
+    .copyright {
+      font-size: 10px;
+      color: $mid-blue-grey;
+      text-align: right;
+      padding: 0 15px 15px 0;
+    }
+  }
 }
-.content.home {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    height: 100vh;
-    overflow: hidden;
-    gap: 50px;
+
+.root.pages {
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  .content {
+    flex-grow: 1;
+    // margin-bottom: 50px;
+  }
+}
+.root.home {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  height: 100vh;
+  overflow: hidden;
+  gap: 50px;
+
+  .copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
 }

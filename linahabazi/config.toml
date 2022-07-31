@@ -14,11 +14,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   mainSections = ["portfolio"]
   test = true
 
-  fonts = ["Lato", "Raleway", "Roboto"]
-  bodyFont = "Lato"
-  headingFont = "Raleway"
-  paragraphFont = "Roboto"
-
   # Nav links in the side bar
 
   [[params.navlinks]]

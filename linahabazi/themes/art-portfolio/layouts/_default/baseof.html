@@ -2,9 +2,14 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-        <div class="content {{ if eq `home` (lower .Title) }}home{{ end }}">
+        <div class="root {{ if eq `home` (lower .Title) }} home {{ else }} pages {{ end }}">
             {{ partial "sidebar" . }}
-            {{ block "main" . }}{{end}}
+            <div class="content">
+                <div class="main">
+                    {{ block "main" . }}{{end}}
+                </div>
+                {{ partial "footer.html" . }}
+            </div>
         </div>
     </body>
 </html>

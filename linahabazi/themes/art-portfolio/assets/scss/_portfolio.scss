@@ -1,19 +1,26 @@
-.portfolioContent {
+.portfolio {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  align-items: center;
   gap: 30px;
+  margin-bottom: 100px;
 
   .work{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+
     .image{
-      max-width: 600px;
+      max-width: 450px;
       img {
         max-width: 100%;
         height: auto;
       }
-      // max-width: 800px;
-      // background-color: gray;
-      margin-bottom: 20px;
+    }
+    .label {
+      color: $dark-blue-grey;
+      font-size: 13px;
     }
   }
 }

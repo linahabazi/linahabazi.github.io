@@ -1,13 +1,11 @@
 .heroArt {
-
     .backgroundImage {
-        width: 700px;
+        width: 50vw;
         background-color: $mid-blue-grey;
         border-radius: 0 0 25px 0;
 
         img {
             width: 100%;
-            // object-position: 20% 10%; 
             object-fit: cover;
             height: 100vh;
             border-radius: 0 0 25px 0;
