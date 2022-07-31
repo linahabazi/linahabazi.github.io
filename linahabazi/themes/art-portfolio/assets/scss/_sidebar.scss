@@ -10,11 +10,12 @@
     }
 
     @include sm {
+        display: none;
         // background-color: $warm-off-white;
         .xIcon {
             display: block;
             position: absolute;
-            right: 30px;
+            right: 50px;
             top: 50px;
         }
         .open {
@@ -25,6 +26,10 @@
 
     .accentImage {
         width: 20px;
+        // display: none;
+        // @include sm {
+        //     display: block;
+        // }
         
         img {
             object-position: left center; 
@@ -52,9 +57,9 @@
             }
 
             @include sm {
-                font-size: 35px;
+                font-size: 30px;
                 line-height: 40px;;
-                max-width: 250px;
+                max-width: 150px;
             }
         }
         .nav {
@@ -62,6 +67,9 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            @include sm {
+                font-size: 15px;
+            }
             .navLink {
                 
             }
@@ -85,63 +93,63 @@
         }
     }
 }
-.sidebar.hidden {
-    @include sm {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        height: max-content;
+// .sidebar.hidden {
+//     @include sm {
+//         position: relative;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 15px;
+//         height: max-content;
     
-        .hamburgerIcon {
-            display: block;
-            position: absolute;
-            right: 30px;
-            top: 50px;
-        }
+//         .hamburgerIcon {
+//             display: block;
+//             position: absolute;
+//             right: 30px;
+//             top: 50px;
+//         }
     
-        .xIcon {
-            display: none;
-        }
+//         .xIcon {
+//             display: none;
+//         }
     
-        .accentImage {
-            height: 20px;
-            width: unset;
+//         .accentImage {
+//             height: 20px;
+//             width: unset;
             
-            img {
-                object-position: left center; 
-                object-fit: cover;
-                width: 100vw;
-                height: unset;
-                max-height: 100%;
-                border-radius: 0 0 100px 0;
-            }
-        }
+//             img {
+//                 object-position: left center; 
+//                 object-fit: cover;
+//                 width: 100vw;
+//                 height: unset;
+//                 max-height: 100%;
+//                 border-radius: 0 0 100px 0;
+//             }
+//         }
 
-        .sidebarLinks {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            padding: 0 50px 0 50px;
-            .nav, .socialIcons {
-                display: none;
-            }
-            .title {
-                text-align: left;
-                font-size: 35px;
-                line-height: 40px;
-                text-transform: uppercase;
-                max-width: 270px;
+//         .sidebarLinks {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: flex-start;
+//             padding: 0 50px 0 50px;
+//             .nav, .socialIcons {
+//                 display: none;
+//             }
+//             .title {
+//                 text-align: left;
+//                 font-size: 35px;
+//                 line-height: 40px;
+//                 text-transform: uppercase;
+//                 max-width: 270px;
                 
-                a {
-                    letter-spacing: 3px;
-                    word-spacing: 5px;
-                    br {
-                        // display: inline-block;
-                        // width: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     letter-spacing: 3px;
+//                     word-spacing: 5px;
+//                     br {
+//                         // display: inline-block;
+//                         // width: 50px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

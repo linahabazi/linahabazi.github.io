@@ -3,6 +3,9 @@
 //               //
 
 //--- breakpoints ---//
+// Small smartphones
+$screen-xs-min: 365px;
+
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
 
@@ -14,6 +17,14 @@ $screen-lg-min: 992px;
 
 // Large tablets and desktops
 $screen-xl-min: 1200px;
+
+
+// Extra small devices
+@mixin xs {
+  @media (max-width: #{$screen-xs-min}) {
+      @content;
+  }
+}
 
 // Small devices
 @mixin sm {
@@ -71,6 +82,7 @@ $fonts: "Lato|Raleway|Roboto";
 @import "sidebar";
 @import "cv";
 @import "contact";
+@import "mobileHeader";
 
 //--- general ---//
 
@@ -158,10 +170,26 @@ p, h2, h5 {
 .root.home {
   flex-direction: row-reverse;
   justify-content: flex-end;
-
   height: 100vh;
   overflow: hidden;
   gap: 50px;
+
+  .accentImage {
+    display: none;
+  }
+
+  @include sm {
+    gap: 30px;
+    .sidebar {
+      display: flex;
+      .accentImage {
+        display: none;
+      }
+      .xIcon {
+        display: none;
+      }
+    }
+  }
 
   .copyright {
     position: absolute;
