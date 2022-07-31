@@ -2,9 +2,10 @@
 {{ $heroData := index .Site.Data.content.artwork .Params.seriesId .Params.artworkId }}
 
 <div class="heroArt">
-    <div class="backgroundImage">
-        <img src="{{ $heroData.heroImage }}" />
-    </div>
+    <!-- <div class="backgroundImage"> -->
+        <img class="backgroundImage fadeLoad" onload="this.style.opacity=1" src="{{ $heroData.heroImage }}" />
+        <img class="backgroundImage" src="{{ $heroData.heroImage }}" />
+    <!-- </div> -->
     <a href="/portfolio/{{.Params.artworkId}}">
         <div class="titleCard">
             <div class="title">{{ $heroData.title }}</div>

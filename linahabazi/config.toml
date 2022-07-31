@@ -19,33 +19,33 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   [[params.navlinks]]
   name = "portfolio"
   displayName = "Portfolio"
-  url = "portfolio/"
+  url = "/portfolio"
 
   [[params.navlinks]]
   name = "bio"
   displayName = "Bio"
-  url = "bio/"
+  url = "/bio"
 
   [[params.navlinks]]
   name = "cv"
   displayName = "CV"
-  url = "cv/"
+  url = "/cv"
 
   [[params.navlinks]]
   name = "contact"
   displayName = "Contact"
-  url = "contact/"
+  url = "/contact"
 
   [[params.navlinks]]
   name = "code-art"
   displayName = "Code Art"
-  url = "code-art/"
+  url = "/code-art"
   draft = true
 
   [[params.navlinks]]
   name = "reading"
   displayName = "Reading"
-  url = "reading/"
+  url = "/reading"
   draft = true
 
   [[params.sociallinks]]

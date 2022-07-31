@@ -1,0 +1,15 @@
+
+{{ define "main" }}
+{{ $profileImagePath := index .Site.Data.content.images .Params.imageId }}
+  <div class="bio-container">
+    <div class="bio">
+      <div class="profileImage">
+        <img src="{{ $profileImagePath }}" />
+      </div>
+      <div class="bioText">{{ .Content }}</div>
+    </div>
+    <div class="bottomNote">
+      <span class="boldItalic">For the nerds:</span> I coded and styled this website myself in Hugo, a static website engine, and SCSS. You can view my code on GitHub.
+    </div>
+  </div>
+{{ end }}

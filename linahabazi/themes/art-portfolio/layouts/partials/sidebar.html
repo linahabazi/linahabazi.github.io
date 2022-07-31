@@ -2,21 +2,23 @@
 {{ with .Site.GetPage "/" }}
   {{ $heroData = index .Site.Data.content.artwork .Params.seriesId .Params.artworkId }}
 {{ end }}
+{{ $title := lower .Title }}
 
 <nav class="sidebar">
-    {{ if ne (lower .Title) "home" }}
+    {{ if ne $title "home" }}
         <div class="accentImage">
+            <!-- <img class="fadeLoad" onload="this.style.opacity=1" src="{{ $heroData.heroImage }}" /> -->
             <img src="{{ $heroData.heroImage }}" />
         </div>
     {{ end }}
     <div class="sidebarLinks">
-        <div class="title {{ if eq `home` (lower .Title) }}active{{ end }}">
-        <a href="/">Lina<br>Habazi</a>
+        <div class="title {{ if eq `home` $title }}active{{ end }}">
+            <a href="/">Lina<br>Habazi</a>
         </div>
         <div class="nav">
         {{ range .Site.Params.navlinks}}
             {{ if ne .draft true }}
-            <div class="navLink {{ if eq .name (lower .Title) }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
+            <div class="navLink {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
             {{ end }}
         {{ end }}
         </div>
