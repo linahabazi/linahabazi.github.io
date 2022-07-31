@@ -13,16 +13,10 @@
     @include md {
       width: 300px;
     }
-    @include sm {
-      // max-width: 300px;
-    }
     .image{
       max-width: 450px;
       @include md {
         max-width: 300px;
-      }
-      @include sm {
-        // max-width: 300px;
       }
       img {
         max-width: 100%;

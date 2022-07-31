@@ -94,10 +94,6 @@ html,body {
   font-family: Lato;
 }
 
-// img {
-//   max-width: 100%;
-// }
-
 .pageTitle {
   font-style: italic;
 }
@@ -115,14 +111,6 @@ a:hover {
 p, h2, h5 {
   color: $dark-blue-grey;
 }
-
-// img.fadeLoad {
-//   opacity: 0;
-//   -webkit-transition: all 2s ease; 
-//   -moz-transition: all 2s ease; 
-//   -ms-transition: all 2s ease; 
-//   -o-transition: all 2s ease; 
-// }
 
 .root {
   display: flex;
@@ -157,7 +145,6 @@ p, h2, h5 {
 
   .content {
     flex-grow: 1;
-    // margin-bottom: 50px;
     .main{
       display: flex;
       flex-direction: column;

@@ -5,13 +5,11 @@
 {{ $title := lower .Title }}
 
 <nav class="sidebar">
-        <div class="accentImage">
-            <!-- <img class="fadeLoad" onload="this.style.opacity=1" src="{{ $heroData.heroImage }}" /> -->
-            <img src="{{ $heroData.heroImage }}" />
-        </div>
+    <div class="accentImage">
+        <img src="{{ $heroData.heroImage }}" />
+    </div>
     <div class="sidebarLinks">
         <div class="title {{ if eq `home` $title }}active{{ end }}">
-            <!-- <a href="/">Lina<br>Habazi</a> -->
             <a href="/">Lina Habazi</a>
         </div>
         <div class="nav">
@@ -21,13 +19,6 @@
             {{ end }}
         {{ end }}
         </div>
-        <!-- <div class="socialIcons">
-        {{ range .Site.Params.sociallinks}}
-            <div class="socialIcon"><a href={{.url}}>{{.name}}</a></div>
-        {{ end }}
-        </div> -->
     </div>
-    <!-- <div class="navIcon" onclick="toggleNav()">=/X</div> -->
-    <!-- <div class="hamburgerIcon" onclick="openNav()">=</div> -->
     <div class="xIcon" onclick="closeNav()">X</div>
 </nav>

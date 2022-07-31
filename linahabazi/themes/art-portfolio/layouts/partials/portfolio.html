@@ -3,7 +3,6 @@
   {{ $seriesData := index .Site.Data.content.artwork .Params.seriesId }}
   {{ $artworkData := index $seriesData .Params.artworkId }}
     <div class="work">
-      <!-- <a class="imageLink fadeLoad" onload="this.style.opacity=1" href="{{.Permalink}}"><img class="image" src="{{$artworkData.image}}" /></a> -->
       <a class="imageLink" href="{{.Permalink}}"><img class="image" src="{{$artworkData.image}}" /></a>
       <div class="label">
         <div><span class="artworkTitle">{{ $artworkData.title  }}</span>, {{ $artworkData.year }}</div>

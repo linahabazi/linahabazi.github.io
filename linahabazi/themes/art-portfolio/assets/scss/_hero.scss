@@ -1,9 +1,5 @@
 .heroArt {
-    // @include sm {
-    //     display: none;
-    // }
     width: 50vw;
-
     .backgroundImage {
         width: 50vw;
         background-color: $mid-blue-grey;
@@ -11,12 +7,6 @@
 
         object-fit: cover;
         height: 100vh;
-
-        // opacity: 0;
-        // -webkit-transition: all 2s ease; 
-        // -moz-transition: all 2s ease; 
-        // -ms-transition: all 2s ease; 
-        // -o-transition: all 2s ease; 
     }
     .titleCard {
         background-color: $warm-off-white;

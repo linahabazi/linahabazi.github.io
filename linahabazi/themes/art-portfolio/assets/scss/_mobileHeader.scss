@@ -18,10 +18,6 @@
             a {
                 letter-spacing: 3px;
                 word-spacing: 5px;
-                br {
-                    // display: inline-block;
-                    // width: 50px;
-                }
             }
         }
     
@@ -30,10 +26,6 @@
             position: absolute;
             right: 50px;
             top: 50px;
-        }
-    
-        .xIcon {
-            display: none;
         }
     
         .accentImage {
@@ -49,32 +41,6 @@
                 border-radius: 0 0 100px 0;
             }
         }
-
-        .sidebarLinks {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: flex-start;
-            // padding: 0 50px 0 50px;
-            // .nav, .socialIcons {
-            //     display: none;
-            // }
-            .title {
-                text-align: left;
-                font-size: 35px;
-                line-height: 40px;
-                text-transform: uppercase;
-                max-width: 270px;
-                
-                a {
-                    letter-spacing: 3px;
-                    word-spacing: 5px;
-                    br {
-                        // display: inline-block;
-                        // width: 50px;
-                    }
-                }
-            }
-        }
     }
     @include xs {
         .title {
@@ -82,6 +48,3 @@
         }
     }
 }
-// .mobileHeader.toggle {
-//     display: none;
-// }

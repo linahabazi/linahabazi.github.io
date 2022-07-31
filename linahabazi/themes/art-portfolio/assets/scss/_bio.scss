@@ -1,32 +1,3 @@
-// .bio-container {
-//   max-width: 800px;
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 50px 0 50px;
-
-//   .bio {
-//     display: flex;
-//     flex-direction: row;
-//     gap: 10%;
-//     align-items: flex-start;
-//     justify-content: space-between;
-    
-//     .profileImage{
-//       max-width: 250px;
-//       img {
-//         max-width: 100%;
-//         height: auto;
-//       }
-//     }
-
-//     .bioText{
-//       max-width: 420px;
-//       min-width: 300px;
-//       text-align: justify;
-//     }
-//   }
-// }
-
 .bio-container {
   max-width: 650px;
   display: flex;
@@ -34,7 +5,6 @@
   align-items: center;
 
   .bio {
-    // margin: 0 50px 0 50px;
     .profileImage{
       max-width: 250px;
       @include md {
@@ -42,7 +12,6 @@
       }
       @include sm {
         max-width: 115px;
-        // max-width: 150px;
       }
       img {
         margin: 20px 20px 10px 0;
@@ -54,10 +23,6 @@
     .bioText{
       text-align: justify;
       max-width: 650px;
-      // @include sm {
-      //   max-width: 320px;
-      // }
-      // min-width: 300px;
     }
   }
   .bottomNote {
@@ -67,6 +32,5 @@
       font-style:italic;
       font-weight: 900;
     }
-    // white-space: nowrap;  
   }
 }
