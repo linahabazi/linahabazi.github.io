@@ -32,11 +32,11 @@ $fontsList: "";
 //--- imports ---//
 
 @import "portfolio";
-// @import "bio";
-// @import "hero";
-// @import "sidebar";
-// @import "cv";
-// @import "form-reset";
+@import "bio";
+@import "hero";
+@import "sidebar";
+@import "cv";
+@import "form-reset";
 
 //--- general ---//
 
@@ -77,7 +77,8 @@ p, h2, h5 {
 }
 .content.home {
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100vh;
     overflow: hidden;
+    gap: 50px;
 }
