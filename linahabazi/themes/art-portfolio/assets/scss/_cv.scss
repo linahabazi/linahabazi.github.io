@@ -1,6 +1,9 @@
 .cv {
     max-width: 800px;
     margin-top: 50px;
+    @include sm {
+        margin-top: 0px;
+      }
     h2 {
         margin-bottom: 50px;
     }

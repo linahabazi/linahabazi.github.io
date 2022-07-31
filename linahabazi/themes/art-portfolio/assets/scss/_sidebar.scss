@@ -5,6 +5,24 @@
     height: 100vh;
     position: sticky;
     top: 0;
+    .hamburgerIcon, .xIcon {
+        display: none;
+    }
+
+    @include sm {
+        // background-color: $warm-off-white;
+        .xIcon {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 50px;
+        }
+        .open {
+            position: absolute;
+            // overflow: hidden;
+        }
+    }
+
     .accentImage {
         width: 20px;
         
@@ -26,9 +44,17 @@
             font-size: 48px;
             line-height: 50px;
             text-transform: uppercase;
-            
+            color: $dark-blue-grey;
+            max-width: 250px;
+
             a {
                 letter-spacing: 5px;
+            }
+
+            @include sm {
+                font-size: 35px;
+                line-height: 40px;;
+                max-width: 250px;
             }
         }
         .nav {
@@ -55,6 +81,66 @@
             }
             a:hover {
                 color: $accent;
+            }
+        }
+    }
+}
+.sidebar.hidden {
+    @include sm {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: max-content;
+    
+        .hamburgerIcon {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 50px;
+        }
+    
+        .xIcon {
+            display: none;
+        }
+    
+        .accentImage {
+            height: 20px;
+            width: unset;
+            
+            img {
+                object-position: left center; 
+                object-fit: cover;
+                width: 100vw;
+                height: unset;
+                max-height: 100%;
+                border-radius: 0 0 100px 0;
+            }
+        }
+
+        .sidebarLinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0 50px 0 50px;
+            .nav, .socialIcons {
+                display: none;
+            }
+            .title {
+                text-align: left;
+                font-size: 35px;
+                line-height: 40px;
+                text-transform: uppercase;
+                max-width: 270px;
+                
+                a {
+                    letter-spacing: 3px;
+                    word-spacing: 5px;
+                    br {
+                        // display: inline-block;
+                        // width: 50px;
+                    }
+                }
             }
         }
     }

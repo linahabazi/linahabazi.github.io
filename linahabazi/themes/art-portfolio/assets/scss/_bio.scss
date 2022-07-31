@@ -37,8 +37,15 @@
     // margin: 0 50px 0 50px;
     .profileImage{
       max-width: 250px;
+      @include md {
+        max-width: 200px;
+      }
+      @include sm {
+        max-width: 115px;
+        // max-width: 150px;
+      }
       img {
-        margin: 0 20px 20px 0;
+        margin: 20px 20px 10px 0;
         max-width: 100%;
         height: auto;
         float: left;
@@ -47,6 +54,9 @@
     .bioText{
       text-align: justify;
       max-width: 650px;
+      // @include sm {
+      //   max-width: 320px;
+      // }
       // min-width: 300px;
     }
   }

@@ -4,7 +4,7 @@
 {{ end }}
 {{ $title := lower .Title }}
 
-<nav class="sidebar">
+<nav class="sidebar hidden">
     {{ if ne $title "home" }}
         <div class="accentImage">
             <!-- <img class="fadeLoad" onload="this.style.opacity=1" src="{{ $heroData.heroImage }}" /> -->
@@ -13,7 +13,8 @@
     {{ end }}
     <div class="sidebarLinks">
         <div class="title {{ if eq `home` $title }}active{{ end }}">
-            <a href="/">Lina<br>Habazi</a>
+            <!-- <a href="/">Lina<br>Habazi</a> -->
+            <a href="/">Lina Habazi</a>
         </div>
         <div class="nav">
         {{ range .Site.Params.navlinks}}
@@ -28,4 +29,7 @@
         {{ end }}
         </div> -->
     </div>
+    <!-- <div class="navIcon" onclick="toggleNav()">=/X</div> -->
+    <div class="hamburgerIcon" onclick="openNav()">=</div>
+    <div class="xIcon" onclick="closeNav()">X</div>
 </nav>

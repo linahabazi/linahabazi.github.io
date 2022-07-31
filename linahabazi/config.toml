@@ -20,19 +20,19 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   name = "portfolio"
   displayName = "Portfolio"
   url = "/portfolio"
-  draft = true
+  draft = false
 
   [[params.navlinks]]
   name = "bio"
   displayName = "Bio"
   url = "/bio"
-  draft = true
+  draft = false
 
   [[params.navlinks]]
   name = "cv"
   displayName = "CV"
   url = "/cv"
-  draft = true
+  draft = false
 
   [[params.navlinks]]
   name = "contact"
