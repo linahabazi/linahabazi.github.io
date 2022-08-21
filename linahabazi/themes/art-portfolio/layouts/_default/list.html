@@ -1,5 +1,9 @@
 {{ define "main" }}
     {{ if eq .Title "Portfolio" }}
         {{ partial "portfolio.html" . }}
+    {{ else if eq .Title "Coding"}}
+        {{ partial "coding.html" . }}
+    {{ else if eq .Title "Reading"}}
+        {{ partial "reading.html" . }}
     {{ end }}
 {{ end }}

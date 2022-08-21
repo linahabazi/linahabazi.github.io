@@ -1,5 +1,7 @@
 {{ define "main" }}
     {{ if in .Page "portfolio" }}
         {{ partial "artworkDetail.html" . }}
+    {{ else if in .Page "reading" }}
+    {{ else if in .Page "coding" }}
     {{ end }}
 {{ end }}
