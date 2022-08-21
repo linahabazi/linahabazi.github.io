@@ -10,13 +10,13 @@ $screen-xs-min: 375px;
 $screen-sm-min: 576px;
 
 // Small tablets (portrait view)
-$screen-md-min: 768px;
+$screen-md-min: 1018px;
 
-// Tablets and small desktops
-$screen-lg-min: 992px;
+// // Tablets and small desktops
+// $screen-lg-min: 992px;
 
-// Large tablets and desktops
-$screen-xl-min: 1200px;
+// // Large tablets and desktops
+// $screen-xl-min: 1200px;
 
 
 // Extra small devices
@@ -40,19 +40,19 @@ $screen-xl-min: 1200px;
   }
 }
 
-// Large devices
-@mixin lg {
-  @media (max-width: #{$screen-lg-min}) {
-      @content;
-  }
-}
+// // Large devices
+// @mixin lg {
+//   @media (max-width: #{$screen-lg-min}) {
+//       @content;
+//   }
+// }
 
-// Extra large devices
-@mixin xl {
-  @media (max-width: #{$screen-xl-min}) {
-      @content;
-  }
-}
+// // Extra large devices
+// @mixin xl {
+//   @media (max-width: #{$screen-xl-min}) {
+//       @content;
+//   }
+// }
 
 //--- colors ---//
 
@@ -83,6 +83,7 @@ $fonts: "Lato|Raleway|Roboto";
 @import "cv";
 @import "contact";
 @import "mobileHeader";
+@import "artworkDetail";
 
 //--- general ---//
 
@@ -182,5 +183,23 @@ p, h2, h5 {
     position: absolute;
     bottom: 0px;
     right: 0px;
+  }
+}
+
+.artworkDetail, .listArtwork {
+  .artworkImage {
+    max-width: 400px;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .artworkLabel {
+    color: $dark-blue-grey;
+    font-size: 15px;
+  }
+  .artworkTitle {
+    font-style: italic;
   }
 }

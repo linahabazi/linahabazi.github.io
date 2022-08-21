@@ -2,13 +2,16 @@
   {{ range .Pages }}
   {{ $seriesData := index .Site.Data.content.artwork .Params.seriesId }}
   {{ $artworkData := index $seriesData .Params.artworkId }}
-    <div class="work">
-      <a class="imageLink" href="{{.Permalink}}"><img class="image" src="{{$artworkData.image}}" /></a>
-      <div class="label">
-        <div><span class="artworkTitle">{{ $artworkData.title  }}</span>, {{ $artworkData.year }}</div>
+    <div class="listArtwork {{.Params.artworkId}}">
+      <a class="artworkImage imageLink" href="{{.Permalink}}">
+        <img src="{{$artworkData.image}}" />
+      </a>
+      <div class="artworkLabel">
+        <div class="artworkTitle">{{ $artworkData.title }}</div>
         <div>{{ $artworkData.dimensions }}</div>
         <div>{{ $seriesData.medium }}</div>
-      </div>
+        <div>{{ $artworkData.year }}</div>
+    </div>
     </div>
 
   {{end}}

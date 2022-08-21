@@ -9,6 +9,9 @@
     @include sm {
         display: none;
     }
+    @include md {
+        gap: 30px;
+    }
 
     .xIcon {
         display: none;
@@ -35,6 +38,9 @@
         flex-direction: column;
         justify-content: center;
         gap: 35px;
+        @include md {
+            gap: 20px;
+        }
         .title {
             text-align: left;
             font-size: 48px;
@@ -42,6 +48,10 @@
             text-transform: uppercase;
             color: $dark-blue-grey;
             max-width: 250px;
+            @include md {
+                font-size: 25px;
+                line-height: 25px;
+            }
 
             a {
                 letter-spacing: 5px;
@@ -59,6 +69,9 @@
             flex-direction: column;
             gap: 10px;
             @include sm {
+                font-size: 15px;
+            }
+            @include md {
                 font-size: 15px;
             }
             .navLink {

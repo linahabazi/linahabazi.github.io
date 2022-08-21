@@ -1,0 +1,32 @@
+.artworkDetail {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 50px 0;
+    @include md {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+        align-items: center;
+    }
+    @include sm {
+        flex-direction: column;
+        margin: 0 0 50px 0;
+        align-items: center;
+    }
+    gap: 50px;
+    .artworkContent {
+        display: flex;
+        flex-direction: column;
+        max-width: 285px;
+        @include md {
+            max-width: 400px;
+        }
+        .artworkPageTitle {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .artworkDescription {
+            font-size: 15px;
+        }
+    }
+
+}

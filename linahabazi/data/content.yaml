@@ -11,25 +11,25 @@ artwork:
     womansVoice:
       title: A Woman's Voice is a Revolution
       year: 2018
-      dimensions: 11" x 17"
+      dimensions: 11 x 17 inches
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: womansVoice
       tags: [arabic]
     mintTea:
       title: Mint Tea
       year: 2020
-      dimensions: 5" x 7"
+      dimensions: 5 x 7 inches
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: mintTea
       tags: [arabic]
   relief:
     seriesTitle: Relief Monoprints
-    medium: Relief
+    medium: Relief monoprint
     tags: [printmaking, relief]
     kuffiyehscope:
       title: Kuffiyehscope
       year: 2021
-      dimensions: 24" x 30"
+      dimensions: 24 x 30 inches
       image: https://user-images.githubusercontent.com/20896521/183235423-867d988d-f50f-482f-b922-95dc166f77a2.png
       heroImage: https://user-images.githubusercontent.com/20896521/183238044-bc345d7d-6263-4b19-81d1-4a223302f6c8.png
       imageId: kuffiyehscope
@@ -43,19 +43,19 @@ artwork:
     failedClone:
       title: Failed Clone
       year: 2021
-      dimensions: 24" x 30"
+      dimensions: 24 x 30 inches
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: failedClone
     orphanChild:
       title: Orphan Child
       year: 2021
-      dimensions: 24" x 30"
+      dimensions: 24 x 30 inches
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: orphanChild
     opposingForces:
       title: Opposing Forces
       year: 2021
-      dimensions: 24" x 30"
+      dimensions: 24 x 30 inches
       image: https://user-images.githubusercontent.com/20896521/150619376-648d67bb-c12b-4f2d-9a17-c5d63868701a.jpg
       imageId: opposingForces
 ...

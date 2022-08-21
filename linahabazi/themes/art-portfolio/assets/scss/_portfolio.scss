@@ -5,27 +5,13 @@
   margin-top: 50px;
   margin-bottom: 100px;
 
-  .work{
+  .listArtwork{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 450px;
     @include md {
       width: 300px;
-    }
-    .image{
-      max-width: 450px;
-      @include md {
-        max-width: 300px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-    .label {
-      color: $dark-blue-grey;
-      font-size: 13px;
     }
   }
 }
