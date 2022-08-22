@@ -1,12 +1,12 @@
-{{ $heroData := "" }}
+{{ $imagePath := "" }}
 {{ with .Site.GetPage "/" }}
-  {{ $heroData = index .Site.Data.content.artwork .Params.seriesId .Params.artworkId }}
+    {{ $imagePath = print .Site.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
 {{ end }}
 {{ $title := lower .Title }}
 
 <nav class="sidebar">
     <div class="accentImage">
-        <img src="{{ $heroData.heroImage }}" />
+        <img src="{{ $imagePath }}" />
     </div>
     <div class="sidebarLinks">
         <div class="title {{ if eq `home` $title }}active{{ end }}">

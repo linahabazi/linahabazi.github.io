@@ -1,13 +1,13 @@
-{{ $heroData := "" }}
+{{ $imagePath := "" }}
 {{ with .Site.GetPage "/" }}
-  {{ $heroData = index .Site.Data.content.artwork .Params.seriesId .Params.artworkId }}
+    {{ $imagePath = print .Site.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
 {{ end }}
 {{ $title := lower .Title }}
 
 {{ if ne $title "home" }}
 <div class="mobileHeader ">
     <div class="accentImage">
-        <img src="{{ $heroData.heroImage }}" />
+        <img src="{{ $imagePath }}" />
     </div>
     <div class="title {{ if eq `home` $title }}active{{ end }}">
         <a href="/">Lina Habazi</a>

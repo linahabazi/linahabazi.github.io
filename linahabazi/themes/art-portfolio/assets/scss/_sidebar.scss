@@ -50,17 +50,12 @@
             max-width: 250px;
             @include md {
                 font-size: 25px;
-                line-height: 25px;
+                line-height: 30px;
+                max-width: 150px;
             }
 
             a {
                 letter-spacing: 5px;
-            }
-
-            @include sm {
-                font-size: 30px;
-                line-height: 40px;;
-                max-width: 150px;
             }
         }
         .nav {

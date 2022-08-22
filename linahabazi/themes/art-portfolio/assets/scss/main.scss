@@ -58,6 +58,7 @@ $screen-md-min: 1018px;
 
 $dark-blue-grey: #36363a;
 $mid-blue-grey: #73737f;
+$light-blue-grey: #d1d1e0;
 $warm-off-white: #fffef9;
 
 // turquoise accent
@@ -78,7 +79,7 @@ $fonts: "Lato|Raleway|Roboto";
 
 @import "portfolio";
 @import "bio";
-@import "hero";
+@import "banner";
 @import "sidebar";
 @import "cv";
 @import "contact";
@@ -188,11 +189,12 @@ p, h2, h5 {
 
 .artworkDetail, .listArtwork {
   .artworkImage {
-    max-width: 400px;
+    max-width: 450px;
     flex-shrink: 0;
     img {
       width: 100%;
       height: auto;
+      box-shadow: 0 0 1px $light-blue-grey;
     }
   }
   .artworkLabel {
@@ -200,6 +202,7 @@ p, h2, h5 {
     font-size: 15px;
   }
   .artworkTitle {
+    color: $dark-blue-grey;
     font-style: italic;
   }
 }

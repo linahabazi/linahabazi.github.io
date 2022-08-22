@@ -1,19 +1,21 @@
-{{ $seriesData := index .Site.Data.content.artwork .Params.seriesId }}
+{{ $seriesData := index .Site.Data.artwork .Params.seriesId }}
 {{ $artworkData := index $seriesData .Params.artworkId }}
+{{ $imagePath := print .Site.Data.resources.urls.s3ImagePath $artworkData.image }}
+
 <div class="artworkDetail">
     <div class="artworkContent">
         <div class="artworkPageTitle artworkTitle">{{$artworkData.title}}</div>
         <div class="artworkLabel">
             <div class="artworkTitle">{{ $artworkData.title }}</div>
             <div>{{ $artworkData.dimensions }}</div>
-            <div>{{ $seriesData.medium }}</div>
+            <div>{{ $artworkData.medium }}</div>
             <div>{{ $artworkData.year }}</div>
         </div>
         <div class="artworkDescription">{{.Content}}</div>
 
     </div>
     <div class="artworkImage">
-        <img src="{{$artworkData.image}}" />
+        <img src="{{ $imagePath }}" />
     </div>
 
 </div>

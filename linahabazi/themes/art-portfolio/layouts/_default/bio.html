@@ -1,10 +1,11 @@
 
 {{ define "main" }}
-{{ $profileImagePath := index .Site.Data.content.images .Params.imageId }}
+{{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.imageId }}
+
   <div class="bio-container">
     <div class="bio">
       <div class="profileImage">
-        <img src="{{ $profileImagePath }}" />
+        <img src="{{ $imagePath }}" />
       </div>
       <div class="bioText">{{ .Content }}</div>
     </div>

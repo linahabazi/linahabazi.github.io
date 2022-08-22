@@ -1,0 +1,70 @@
+---
+silkscreen:
+  seriesTitle: Silkscreen Prints 2018-2020
+  tags: [printmaking, silkscreen]
+  womansVoice:
+    title: A Woman's Voice is a Revolution
+    year: 2018
+    dimensions: 11 x 17 inches
+    medium: Silkscreen print
+    image: 
+    tags: [arabic]
+  mintTea:
+    title: Mint Tea
+    year: 2020
+    dimensions: 5 x 7 inches
+    medium: Silkscreen print
+    image: 
+    tags: [arabic]
+relief:
+  seriesTitle: Relief Prints
+  tags: [printmaking, relief]
+  kuffiyehscope:
+    title: Kuffiyehscope
+    year: 2021
+    dimensions: 24 x 30 inches
+    medium: Relief monoprint
+    image: artwork/printmaking/relief/kuffiyehscope.png
+    tags: [palestine]
+  iAmFree:
+  holyBook:
+    title: Holy Book
+    year: 2019
+    dimensions: 11 x 14 inches
+    medium: Relief reduction woodblock print
+    image: artwork/printmaking/relief/holy-book.jpg
+  alQuds:
+    title: Al-Quds
+    year: 2019
+    dimensions: 9 x 11 inches
+    medium: Relief print
+    image: artwork/printmaking/relief/al-quds.jpg
+  family:
+    title: Family
+    year: 2019
+    dimensions: 9 x 9 inches
+    medium: Relief print
+    image: artwork/printmaking/relief/family.jpg
+asymmetry:
+  seriesTitle: >
+    Asymmetry: Xerographic Collages
+  tags: [printmaking, silkscreen, xerography, xerox art, scanner art, palestine]
+  failedClone:
+    title: Failed Clone
+    year: 2021
+    dimensions: 24 x 30 inches
+    medium: Silkscreen print
+    image: artwork/printmaking/silkscreen/failed-clone.png
+  orphanChild:
+    title: Orphan Child
+    year: 2021
+    dimensions: 24 x 30 inches
+    medium: Silkscreen print
+    image: artwork/printmaking/silkscreen/orphan-child.png
+  opposingForces:
+    title: Opposing Forces
+    year: 2021
+    dimensions: 24 x 30 inches
+    medium: Silkscreen print
+    image: artwork/printmaking/silkscreen/opposing-forces.png
+...

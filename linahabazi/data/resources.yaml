@@ -1,0 +1,6 @@
+---
+urls:
+  s3ImagePath: https://linahabazi-public.s3.us-east-1.amazonaws.com/portfolio/images/
+images:
+  logo: 
+  favicon: 

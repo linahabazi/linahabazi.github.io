@@ -6,4 +6,5 @@ type: 'home'
 layout: 'home'
 artworkId: 'kuffiyehscope'
 seriesId: 'relief'
+bannerImagePath: banner/kuffiyehscope-banner.png
 ---
