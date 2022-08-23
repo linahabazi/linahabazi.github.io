@@ -1,4 +1,4 @@
-baseURL = 'http://linahabazi.com/'
+baseURL = 'https://linahabazi.github.io'
 languageCode = 'en-us'
 title = 'Lina Habazi'
 pluralizelisttitles = false
