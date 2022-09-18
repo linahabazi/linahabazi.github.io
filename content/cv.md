@@ -15,7 +15,7 @@ layout: 'cv'
 
 ##### EXHIBITIONS
 
-**2022** The Houston Artist Speaks Through Grids
+**2022** The Houston Artist Speaks Through Grids  
 **2022** The Other Side, Winter Street Studios, Houston, TX  
 **2021** In the Sun, Station Museum of Contemporary Art, Houston, TX  
 **2021** Red Bull Arts Detroit Art Mile Virtual Exhibit, Curated by Maamoul Press  
