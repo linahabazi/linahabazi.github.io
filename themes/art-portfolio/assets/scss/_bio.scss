@@ -44,9 +44,14 @@
   .bottomNote {
     display: inline-block;
     margin-top: 15px;
-    .boldItalic{
-      font-style:italic;
+    .bold{
       font-weight: 900;
+    }
+    .italic {
+      font-style:italic;
+    }
+    .underline {
+      text-decoration: underline;
     }
   }
 }
