@@ -45,6 +45,16 @@ relief:
     dimensions: 9 x 9 inches
     medium: Relief print
     image: artwork/printmaking/relief/family.jpg
+  laughsInArabic:
+    title: Laughs in Arabic
+    year: 2019
+    dimensions: 8 x 8 inches
+    image: artwork/printmaking/relief/laughs-in-arabic.jpg
+  land:
+    title: LAND
+    year: 2019
+    dimensions: 8 x 8 inches
+    image: artwork/printmaking/relief/land.jpg
 asymmetry:
   seriesTitle: >
     Asymmetry: Xerographic Collages
