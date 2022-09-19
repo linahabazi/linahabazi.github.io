@@ -1,7 +1,8 @@
 ---
 artworkId: kuffiyehscope
 seriesId: relief
-
+weight: 1
+date: "2021-01-01"
 draft: false
 ---
 
