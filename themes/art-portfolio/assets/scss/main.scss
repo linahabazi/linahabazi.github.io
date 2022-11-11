@@ -74,6 +74,7 @@ $dark-accent: #13a38b;
 $fonts: "Lato|Raleway|Roboto";
 
 @import url("https://fonts.googleapis.com/css?family=#{$fonts}");
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Francois+One&family=Hammersmith+One&family=Jomhuria&display=swap');
 
 //--- imports ---//
 
@@ -93,7 +94,7 @@ html,body {
   background-color: $warm-off-white;
   margin: 0;
   overscroll-behavior: none;
-  font-family: Lato;
+  font-family: Cairo;
 }
 
 .pageTitle {
@@ -184,6 +185,23 @@ p, h2, h5 {
     position: absolute;
     bottom: 0px;
     right: 0px;
+  }
+}
+
+.artworkPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .pageNav {
+    margin-top: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .disabled {
+      color: $light-blue-grey;
+    }
   }
 }
 

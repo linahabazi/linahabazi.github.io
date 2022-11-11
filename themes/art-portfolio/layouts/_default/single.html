@@ -1,5 +1,19 @@
 {{ define "main" }}
     {{ if in .Page "portfolio" }}
+    <div class="artworkPage">
+        <div class="pageNav">
+            {{ if in .Next "portfolio" }}
+                <a href="{{with .Next}}{{.Permalink}}{{end}}">Prev</a>
+            {{ else }}
+                <div class="disabled">Prev</div>
+            {{ end }}
+            {{ if in .Prev "portfolio" }}
+                <a href="{{with .Prev}}{{.Permalink}}{{end}}">Next</a>
+            {{ else }}
+                <div class="disabled">Next</div>
+            {{ end }}
+        </div>
         {{ partial "artworkDetail.html" . }}
+    </div>
     {{ end }}
 {{ end }}

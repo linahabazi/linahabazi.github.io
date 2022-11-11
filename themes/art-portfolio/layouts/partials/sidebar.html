@@ -10,7 +10,11 @@
     </div>
     <div class="sidebarLinks">
         <div class="title {{ if eq `home` $title }}active{{ end }}">
-            <a href="/">Lina Habazi</a>
+            <a href="/">
+                <span class="english">Lina Habazi</span>
+                <br>
+                <span>لينا حبازي</span>
+            </a>
         </div>
         <div class="nav">
         {{ range .Site.Params.navlinks}}

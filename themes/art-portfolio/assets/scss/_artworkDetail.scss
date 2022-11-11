@@ -2,9 +2,7 @@
     display: flex;
     flex-direction: row;
     margin: 50px 0 50px 0;
-    max-width: 735px;
-    width: 100%;
-    gap: 50px;
+    width: 735px;
     justify-content: space-between;
     @include md {
         flex-direction: column;
@@ -19,8 +17,7 @@
     .artworkContent {
         display: flex;
         flex-direction: column;
-        max-width: 285px;
-        width: 100%;
+        width: 235px;
         @include md {
             max-width: 400px;
         }
