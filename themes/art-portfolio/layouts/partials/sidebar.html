@@ -5,9 +5,7 @@
 {{ $title := lower .Title }}
 
 <nav class="sidebar">
-    <div class="accentImage">
-        <img src="{{ $imagePath }}" />
-    </div>
+    <img src="{{ $imagePath }}" class="accentImage" />
     <div class="sidebarLinks">
         <div class="title {{ if eq `home` $title }}active{{ end }}">
             <a href="/">
