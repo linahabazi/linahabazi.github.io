@@ -18,8 +18,8 @@
         gap: 30px;
 
         @include xs {
-            width: 300px;  
-            gap: 20px;
+            width: 335px;  
+            gap: 8px;
         }
 
         .title {
@@ -40,7 +40,7 @@
             padding-left: 40px;
 
             @include xs {
-                padding-left: 0px;
+                padding-left: 18px;
             }
         }
 

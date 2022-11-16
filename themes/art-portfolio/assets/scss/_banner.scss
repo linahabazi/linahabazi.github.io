@@ -1,5 +1,8 @@
 .bannerArt {
     width: 50vw;
+    @include sm {
+        width: 35vw;
+    }
     .backgroundImage {
         width: 50vw;
         background-color: $mid-blue-grey;
@@ -9,6 +12,10 @@
 
         object-fit: cover;
         height: 100vh;
+
+        @include sm {
+            width: 25vw;
+        }
     }
     .titleCard {
         background-color: $warm-off-white;
@@ -22,6 +29,10 @@
         border-radius: 8px;
         padding: 13px 25px 15px 20px;
         max-width: 60%;
+
+        @include sm {
+            display: none;
+        }
 
         .title {
             font-size: 15px;
