@@ -6,17 +6,16 @@
         
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 18px;
     height: max-content;
 
     .titleNav {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 20px;
+        align-items: baseline;
 
-        width: 350px;
-        gap: 45px;
+        width: 380px;
+        gap: 30px;
 
         @include xs {
             width: 300px;  
@@ -38,7 +37,7 @@
                 letter-spacing: 5px;
             }
 
-            padding-left: 25px; 
+            padding-left: 40px;
 
             @include xs {
                 padding-left: 0px;
@@ -51,6 +50,7 @@
             height: 15px;
             display: flex;
             justify-content: center;
+            padding: 15px;
 
             .hamburgerIcon {
                 color: $dark-blue-grey;
