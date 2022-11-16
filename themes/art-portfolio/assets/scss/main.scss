@@ -201,6 +201,10 @@ p, h2, h5 {
     flex-direction: row;
     justify-content: flex-end;
 
+    @include sm {
+      margin-top: 0px;
+    }
+
     .disabled {
       color: $light-blue-grey;
     }
