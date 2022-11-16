@@ -14,13 +14,7 @@
                 <span>لينا حبازي</span>
             </a>
         </div>
-        <div class="nav">
-        {{ range .Site.Params.navlinks}}
-            {{ if ne .draft true }}
-            <div class="navLink {{ if eq .name $title }}active{{ end }}"><a href={{.url}}>{{.displayName}}</a></div>
-            {{ end }}
-        {{ end }}
-        </div>
+        {{ partial "navLinks.html" . }}
     </div>
-    <div class="xIcon" onclick="closeNav()">x</div>
+    <!-- <div class="xIcon" onclick="closeNav()">x</div> -->
 </nav>

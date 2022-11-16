@@ -5,13 +5,22 @@
 {{ $title := lower .Title }}
 
 {{ if ne $title "home" }}
-<div class="mobileHeader ">
-    <div class="accentImage">
-        <img src="{{ $imagePath }}" />
+    <div class="mobileHeader">
+        <div class="accentImage">
+            <img src="{{ $imagePath }}" />
+        </div>
+        <div class="titleNav">
+            <a class="title {{ if eq `home` $title }}active{{ end }}" href="/">
+                <span class="english">Lina Habazi</span>
+                <span>لينا حبازي</span>
+            </a>
+            <div class="menuIcons">
+                <div class="hamburgerIcon" onclick="openNav()">=</div>
+                <div class="xIcon" onclick="closeNav()">x</div>
+            </div>
+        </div>
     </div>
-    <div class="title {{ if eq `home` $title }}active{{ end }}">
-        <a href="/">Lina Habazi</a>
+    <div class="mobileNav">
+        {{ partial "navLinks.html" . }}
     </div>
-    <div class="hamburgerIcon" onclick="openNav()">=</div>
-</div>
 {{ end }}

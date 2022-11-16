@@ -1,51 +1,93 @@
 .mobileHeader {
     display: none;
     @include sm {
-        position: relative;
         display: flex;
-        flex-direction: column;
+    }
+        
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    height: max-content;
+
+    .titleNav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         gap: 20px;
-        height: max-content;
+
+        width: 350px;
+        gap: 45px;
+
+        @include xs {
+            width: 300px;  
+            gap: 20px;
+        }
 
         .title {
-            text-align: left;
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+
+            font-family: Jomhuria;
             font-size: 35px;
-            line-height: 40px;
+            line-height: 30px;
             text-transform: uppercase;
-            max-width: 270px;
-            margin-left: 50px;
-            
-            a {
-                letter-spacing: 3px;
-                word-spacing: 5px;
+            color: $dark-blue-grey;
+
+            span.english {
+                letter-spacing: 5px;
+            }
+
+            padding-left: 25px; 
+
+            @include xs {
+                padding-left: 0px;
             }
         }
-    
-        .hamburgerIcon {
-            display: block;
-            position: absolute;
-            right: 50px;
-            top: 40px;
-            font-size: 20px;
-        }
-    
-        .accentImage {
-            height: 20px;
-            width: unset;
-            
-            img {
-                object-position: left center; 
-                object-fit: cover;
-                width: 100vw;
-                height: unset;
-                max-height: 100%;
-                border-radius: 0 0 100px 0;
+
+        .menuIcons {
+            width: 15px;
+            line-height: 15px;
+            height: 15px;
+            display: flex;
+            justify-content: center;
+
+            .hamburgerIcon {
+                color: $dark-blue-grey;
+                display: flex;
+                font-size: 20px;
+            }
+            .xIcon {
+                color: $dark-blue-grey;
+                display: none;
+                text-transform: lowercase;
+                font-size: 20px;
             }
         }
     }
-    @include xs {
-        .title {
-            font-size: 25px;
+
+    .accentImage {
+        height: 21px;
+        width: unset;
+
+        img {
+            object-position: left center; 
+            object-fit: cover;
+            width: 100vw;
+            height: unset;
+            max-height: 100%;
+            border-radius: 0 0 100px 0;
+            border: 1px solid $light-blue-grey;
+            border-style: hidden solid solid hidden;
         }
+    }
+}
+.mobileNav {
+    display: none;
+    justify-content: center;
+    padding: 30px 0 40px 0;
+    border-bottom: 1px solid $light-blue-grey;
+    .nav {
+        width: 300px;
     }
 }

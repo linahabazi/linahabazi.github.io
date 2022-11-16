@@ -1,0 +1,11 @@
+{{ $title := lower .Title }}
+
+<div class="nav">
+    {{ range .Site.Params.navlinks}}
+        {{ if ne .draft true }}
+            <div class="navLink {{ if eq .name $title }}active{{ end }}">
+                <a href={{.url}}>{{.displayName}}</a>
+            </div>
+        {{ end }}
+    {{ end }}
+</div>

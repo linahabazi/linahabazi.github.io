@@ -13,22 +13,13 @@
         gap: 30px;
     }
 
-    .xIcon {
-        display: none;
-        @include sm {
-            display: block;
-            position: absolute;
-            right: 50px;
-            top: 40px;
-            font-size: 20px;
-        }
-    }
-
     img.accentImage {
         width: 20px;
         object-position: left center; 
         object-fit: cover;
         border-radius: 0 0 100px 0;
+        border: 1px solid $light-blue-grey;
+        border-style: hidden solid solid hidden;
     }
     .sidebarLinks {
         display: flex;
@@ -47,7 +38,7 @@
             color: $dark-blue-grey;
             max-width: 250px;
             @include md {
-                font-size: 25px;
+                font-size: 35px;
                 line-height: 30px;
                 max-width: 150px;
             }
@@ -56,22 +47,7 @@
                 letter-spacing: 5px;
             }
         }
-        .nav {
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            @include sm {
-                font-size: 15px;
-            }
-            @include md {
-                font-size: 15px;
-            }
-            .navLink {
-                
-            }
-        }
-        .title.active, .navLink.active {
+        .title.active {
             a {
                 color: $dark-accent;
             }
@@ -87,6 +63,27 @@
             .socialIcon {
 
             }
+        }
+    }
+}
+
+.nav {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include sm {
+        font-size: 15px;
+    }
+    @include md {
+        font-size: 15px;
+    }
+    .navLink.active {
+        a {
+            color: $dark-accent;
+        }
+        a:hover {
+            color: $accent;
         }
     }
 }

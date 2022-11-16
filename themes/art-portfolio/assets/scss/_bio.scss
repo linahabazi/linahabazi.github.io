@@ -10,6 +10,7 @@
 
       float: left;
       background-color: grey;
+      border: 1px solid $light-blue-grey;
 
       @include xs {
         margin: 0;
