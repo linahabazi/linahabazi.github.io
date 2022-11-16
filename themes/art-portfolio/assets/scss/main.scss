@@ -95,6 +95,8 @@ html,body {
   margin: 0;
   overscroll-behavior: none;
   font-family: Cairo;
+  -webkit-backface-visibility:  hidden;
+  -webkit-tap-highlight-color:  transparent;
 }
 
 .pageTitle {
