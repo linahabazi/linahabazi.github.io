@@ -50,18 +50,19 @@
             height: 15px;
             display: flex;
             justify-content: center;
-            padding: 15px;
-
+            
             .hamburgerIcon {
                 color: $dark-blue-grey;
                 display: flex;
                 font-size: 20px;
+                padding: 15px;
             }
             .xIcon {
                 color: $dark-blue-grey;
                 display: none;
                 text-transform: lowercase;
                 font-size: 20px;
+                padding: 15px;
             }
         }
     }
