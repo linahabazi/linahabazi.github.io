@@ -25,10 +25,8 @@
                 document.getElementsByClassName("xIcon")[0].style.display = "none";
             }
             const detectInstagram = () => {
-                let isInstagram = navigator.userAgent.match(/instagram/i);
-                if (isInstagram) {
-                    let bannerArt = document.getElementsByClassName("bannerArt")[0];
-                    document.getElementsByClassName("bannerArt")[0].classList.add('instagram-browser-banner');
+                if (navigator.userAgent.match(/instagram/i)) {
+                    document.getElementsByClassName("root")[0].classList.add('instagram-browser');
                 }
             }
             detectInstagram();
