@@ -25,7 +25,13 @@
                 document.getElementsByClassName("xIcon")[0].style.display = "none";
             }
             const detectInstagram = () => {
-                if (!navigator.userAgent.match(/instagram/i)) {
+                let isInstagram = navigator.userAgent.match(/instagram/i);
+                console.log(isInstagram);
+                if (!isInstagram) {
+                    console.log("not instagram")
+                    let bannerArt = document.getElementsByClassName("bannerArt")[0];
+                    console.log(bannerArt);
+                    console.log(bannerArt.classList)
                     document.getElementsByClassName("bannerArt")[0].classList.add('instagram-browser-banner');
                 }
             }
