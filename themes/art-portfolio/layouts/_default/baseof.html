@@ -25,7 +25,7 @@
                 document.getElementsByClassName("xIcon")[0].style.display = "none";
             }
             const detectInstagram = () => {
-                if (navigator.userAgent.match(/instagram/i)) {
+                if (!navigator.userAgent.match(/instagram/i)) {
                     window.document.body.classList.add('instagram-browser');
                 }
             }
