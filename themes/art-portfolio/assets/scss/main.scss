@@ -93,7 +93,6 @@ html,body {
   height: 100%;
   background-color: $warm-off-white;
   margin: 0;
-  overscroll-behavior: none;
   font-family: Cairo;
   -webkit-backface-visibility:  hidden;
   -webkit-tap-highlight-color:  transparent;
@@ -164,8 +163,10 @@ p, h2, h5 {
   flex-direction: row-reverse;
   justify-content: flex-end;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   gap: 50px;
+  position: fixed;
 
   .accentImage {
     display: none;
