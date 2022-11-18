@@ -26,7 +26,7 @@
             }
             const detectInstagram = () => {
                 let isInstagram = navigator.userAgent.match(/instagram/i);
-                if (!isInstagram) {
+                if (isInstagram) {
                     let bannerArt = document.getElementsByClassName("bannerArt")[0];
                     document.getElementsByClassName("bannerArt")[0].classList.add('instagram-browser-banner');
                 }
