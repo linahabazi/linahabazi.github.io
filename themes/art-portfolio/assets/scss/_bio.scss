@@ -12,7 +12,9 @@
       background-color: grey;
       border: 1px solid $light-blue-grey;
 
-      @include xs {
+      width: min-content;
+
+      @include sm {
         margin: 0;
         float: none;
       }
@@ -21,6 +23,7 @@
         height: 300px;
 
         object-fit: cover;
+        object-position: 50% 25%;
         display: block;
 
         @include md {
@@ -28,23 +31,22 @@
           height: 230px;
         }
         @include sm {
-          width: 180px;
-          height: 240px;
-        }
-        @include xs {
-          width: 200px;
-          height: 260px;
+          width: 170px;
+          height: 200px;
         }
       }
     }
     .bioText{
       text-align: justify;
       max-width: 650px;
+      line-height: 25px;
     }
   }
   .bottomNote {
     display: inline-block;
+    text-align: justify;
     margin-top: 15px;
+    width: 100%;
     .bold{
       font-weight: 900;
     }
