@@ -52,5 +52,8 @@
 }
 
 .bannerArt.instagram-browser-banner {
-    max-height: 600px
+    height: 50%;
+    .backgroundImage {
+        height: 50%;
+    }
 }
