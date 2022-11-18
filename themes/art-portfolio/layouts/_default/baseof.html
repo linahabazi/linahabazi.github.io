@@ -24,6 +24,11 @@
                 document.getElementsByClassName("hamburgerIcon")[0].style.display = "flex";
                 document.getElementsByClassName("xIcon")[0].style.display = "none";
             }
+            const detectInstagram = () => {
+                if (navigator.userAgent.match(/instagram/i)) {
+                    window.document.body.classList.add('instagram-browser');
+                }
+            }
         </script>
     </body>
 </html>
