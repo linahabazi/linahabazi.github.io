@@ -27,7 +27,9 @@
             }
             const detectInstagram = () => {
                 document.write(navigator.userAgent)
+                document.write(navigator.userAgent.match(/instagram/i))
                 if (navigator.userAgent.match(/instagram/i)) {
+                    document.write("instagram browser")
                     document.getElementsByClassName("root")[0].classList.add('instagram-browser');
                 }
             }
