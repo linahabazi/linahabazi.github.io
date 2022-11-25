@@ -164,10 +164,8 @@ p, h2, h5 {
   flex-direction: row-reverse;
   justify-content: flex-end;
   height: 100%;
-  // width: 100%;
   overflow: hidden;
   gap: 50px;
-  // position: fixed;
 
   .accentImage {
     display: none;
@@ -194,10 +192,7 @@ p, h2, h5 {
 }
 
 .root.home.instagram-browser {
-  overflow: hidden;
-  // .content .main .bannerArt {
-  //   display: none;
-  // }
+
 }
 
 .artworkPage {
