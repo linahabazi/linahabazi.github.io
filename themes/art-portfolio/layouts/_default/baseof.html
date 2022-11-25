@@ -9,6 +9,7 @@
                 <div class="main">
                     {{ block "main" . }}{{end}}
                 </div>
+                
                 {{ partial "footer.html" . }}
             </div>
         </div>
@@ -25,6 +26,7 @@
                 document.getElementsByClassName("xIcon")[0].style.display = "none";
             }
             const detectInstagram = () => {
+                document.write(navigator.userAgent)
                 if (navigator.userAgent.match(/instagram/i)) {
                     document.getElementsByClassName("root")[0].classList.add('instagram-browser');
                 }
