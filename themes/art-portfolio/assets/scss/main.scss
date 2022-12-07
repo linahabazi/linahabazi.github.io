@@ -86,6 +86,7 @@ $fonts: "Lato|Raleway|Roboto";
 @import "contact";
 @import "mobileHeader";
 @import "artworkDetail";
+@import "copyright";
 
 //--- general ---//
 
@@ -129,11 +130,17 @@ p, h2, h5 {
       height: 100%;
     }
 
-    .copyright {
+    .copyright-footer {
       font-size: 10px;
       color: $mid-blue-grey;
       text-align: right;
       padding: 0 15px 15px 0;
+      @include sm {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+
     }
   }
   .content.hidden {
@@ -184,7 +191,7 @@ p, h2, h5 {
     }
   }
 
-  .copyright {
+  .copyright-footer {
     position: absolute;
     bottom: 0px;
     right: 0px;
