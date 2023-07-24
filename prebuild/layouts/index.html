@@ -1,9 +1,8 @@
 {{ $yaml_template := resources.Get "portfolio.yaml" }}
-{{ with resources.GetRemote "https://oy6n04lzs5.execute-api.us-east-1.amazonaws.com/default/portfolio-management-api?TableName=lh-portfolio-artwork" }}
+{{ with resources.GetRemote .Site.Data.resources.urls.portfolioAPI }}
     {{ $data := unmarshal .Content }}
     {{ $items := $data.Items }}
     {{ range $items }}
-        {{ $string := print (jsonify . ) .content }}
         {{ $filename := printf "portfolio/%s.md" (urlize .id) }} 
         {{ $resource := resources.ExecuteAsTemplate $filename . $yaml_template }}
         {{ $file := $resource.RelPermalink }} 
