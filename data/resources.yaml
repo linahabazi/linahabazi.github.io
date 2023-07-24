@@ -1,6 +1,7 @@
 ---
 urls:
   s3ImagePath: https://linahabazi-public.s3.us-east-1.amazonaws.com/portfolio/images/
+  portfolioAPI: https://oy6n04lzs5.execute-api.us-east-1.amazonaws.com/default/portfolio-management-api?TableName=lh-portfolio-artwork
 images:
   logo: 
   favicon: 

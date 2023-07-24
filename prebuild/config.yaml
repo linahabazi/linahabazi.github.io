@@ -6,3 +6,7 @@ disableKinds:
 outputs:
   home:
   - html
+
+caches:
+  getresource:
+    maxAge: 0
