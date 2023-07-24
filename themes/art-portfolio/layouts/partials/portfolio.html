@@ -3,7 +3,7 @@
   {{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.image }}
 
     <div class="listArtwork {{.Params.id}}">
-      <a class="artworkImage imageLink" href="{{.Permalink}}">
+      <a class="artworkImage imageLink" href="{{.Permalink}}" oncontextmenu="return false;">
         <img src="{{ $imagePath }}" />
       </a>
       <div class="artworkLabel">
