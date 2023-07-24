@@ -1,13 +1,12 @@
 {{ define "main" }}
-{{ $bannerData := index .Site.Data.artwork .Params.seriesId .Params.artworkId }}
 {{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
 
 <div class="bannerArt">
     <img class="backgroundImage" src="{{ $imagePath }}" />
-    <a href="/portfolio/{{.Params.artworkId}}">
+    <a href="/portfolio/{{.Params.id}}">
         <div class="titleCard">
-            <div class="title">{{ $bannerData.title }}</div>
-            <div class="subtitle">Lina Habazi, {{ $bannerData.year }}</div>
+            <div class="title">{{ .Params.bannerTitle }}</div>
+            <div class="subtitle">Lina Habazi, {{ .Params.bannerYear }}</div>
         </div>
     </a>
 </div>

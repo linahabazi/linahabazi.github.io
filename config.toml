@@ -5,6 +5,15 @@ pluralizelisttitles = false
 
 theme = "art-portfolio"
 
+[module]
+  [[module.mounts]]
+  source = 'content'
+  target = 'content'
+
+  [[module.mounts]]
+  source = 'prebuild/public/portfolio'
+  target = 'content/portfolio'
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration

@@ -1,0 +1,149 @@
+[
+    {
+        "id": "kuffiyehscope",
+        "banner": true,
+
+        "title": "Kuffiyehscope",
+        "year": 2021,
+        "dimensions": "24 x 30 inches",
+        "medium": "Relief monoprint",
+        "image": "artwork/printmaking/relief/kuffiyehscope.png",
+        "tags": ["palestine"],
+
+        "artworkId": "kuffiyehscope",
+        "seriesId": "relief",
+        "weight": "1",
+        "date": "2021-01-01",
+        "draft": false,
+
+        "content": "*Kuffiyehscope* is a relief monoprint of an abstracted Kuffiyeh pattern created with a single repeated block. The Kuffiyeh is a traditional scarf, symbolic of Palestinian identity and resilience. What inspired this piece is my desire to share the beauty of Palestinian culture and deconstruct visual patterns to discover their deeper meanings. For this piece, I imagined the stitches of a Kuffiyeh scattering into colors, like a kaleidoscope. There are layers of beauty, history, and meaning to the Kuffiyeh, often misconstrued by a surface level understanding. Here, I reveal the complexity of the scarf and in turn, the depth and intricacies of Palestinian identity.\n\nExhibited at the Station Museum of Contemporary Art and Winter Street Studios."
+    },
+    {
+        "id": "holy-book",
+
+        "title": "Holy Book",
+        "year": 2019,
+        "dimensions": "11 x 14 inches",
+        "medium": "Relief reduction woodblock print",
+        "image": "artwork/printmaking/relief/holy-book.jpg",
+
+        "artworkId": "holyBook",
+        "seriesId": "relief",
+        "date": "2019-01-01",
+        "draft": false,
+        
+        "content": ""
+    },
+    {
+        "id": "al-quds",
+
+        "title": "Al-Quds",
+        "year": 2019,
+        "dimensions": "9 x 11 inches",
+        "medium": "Relief linocut print",
+        "image": "artwork/printmaking/relief/al-quds.jpg",
+
+        "artworkId": "alQuds",
+        "seriesId": "relief",
+        "date": "2019-01-01",
+        "draft": false,
+        
+        "content": ""
+    },
+    {
+        "id": "family",
+
+        "title": "Family",
+        "year": 2019,
+        "dimensions": "9 x 9 inches",
+        "medium": "Relief linocut print",
+        "image": "artwork/printmaking/relief/family.jpg",
+
+        "artworkId": "family",
+        "seriesId": "relief",
+        "date": "2019-01-01",
+        "draft": false,
+        
+        "content": ""
+    },
+    {
+        "id": "laughs-in-arabic",
+
+        "title": "Laughs in Arabic",
+        "year": 2019,
+        "dimensions": "8 x 8 inches",
+        "medium": "Relief linocut print",
+        "image": "artwork/printmaking/relief/laughs-in-arabic.jpg",
+
+        "artworkId": "laughsInArabic",
+        "seriesId": "relief",
+        "date": "2019-01-01",
+        "draft": false,
+        
+        "content": ""
+    },
+    {
+        "id": "land",
+
+        "title": "LAND",
+        "year": 2019,
+        "dimensions": "8 x 8 inches",
+        "medium": "Relief linocut print",
+        "image": "artwork/printmaking/relief/land.jpg",
+
+        "artworkId": "land",
+        "seriesId": "relief",
+        "date": "2019-01-01",
+        "draft": false,
+        
+        "content": ""
+    },
+    {
+        "id": "failed-clone",
+
+        "title": "Failed Clone",
+        "year": 2021,
+        "dimensions": "24 x 30 inches",
+        "medium": "Silkscreen print",
+        "image": "artwork/printmaking/silkscreen/failed-clone.png",
+
+        "artworkId": "failedClone",
+        "seriesId": "asymmetry",
+        "date": "2021-01-01",
+        "draft": false,
+        
+        "content": "Exhibited at the Station Museum of Contemporary Art."
+    },
+    {
+        "id": "orphan-child",
+
+        "title": "Orphan Child",
+        "year": 2021,
+        "dimensions": "24 x 30 inches",
+        "medium": "Silkscreen print",
+        "image": "artwork/printmaking/silkscreen/orphan-child.png",
+
+        "artworkId": "orphanChild",
+        "seriesId": "asymmetry",
+        "date": "2021-01-01",
+        "draft": false,
+        
+        "content": "Exhibited at the Station Museum of Contemporary Art."
+    },
+    {
+        "id": "opposing-forces",
+
+        "title": "Opposing Forces",
+        "year": 2021,
+        "dimensions": "24 x 30 inches",
+        "medium": "Silkscreen print",
+        "image": "artwork/printmaking/silkscreen/opposing-forces.png",
+
+        "artworkId": "opposingForces",
+        "seriesId": "asymmetry",
+        "date": "2021-01-01",
+        "draft": false,
+        
+        "content": "Exhibited at the Station Museum of Contemporary Art."
+    }
+]

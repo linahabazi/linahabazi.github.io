@@ -1,0 +1,10 @@
+{{ $yaml_template := resources.Get "portfolio.yaml" }}
+{{ with .Site.Data.artwork }}
+    {{ range . }}
+        {{ $string := print (jsonify . ) .content }}
+        {{ $filename := printf "portfolio/%s.md" (urlize .id) }} 
+        {{ $resource := resources.ExecuteAsTemplate $filename . $yaml_template }}
+        {{ $file := $resource.RelPermalink }} 
+    {{ end }}
+{{ end }}
+
