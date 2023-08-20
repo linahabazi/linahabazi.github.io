@@ -51,11 +51,7 @@ jobs:
           HUGO_ANALYTICS_IDe: ${{ env.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
           HUGO_ANALYTICS_IDs: ${{ secrets.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
           HUGO_ANALYTICS_IDv: ${{ vars.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
-        with:
-          HUGO_ANALYTICS_IDe: ${{ env.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
-          HUGO_ANALYTICS_IDs: ${{ secrets.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
-          HUGO_ANALYTICS_IDv: ${{ vars.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
-        run:
+        run: |
           hugo -s prebuild && hugo \
             --minify \
             --baseURL ${{ steps.pages.outputs.base_url }} \
