@@ -5,7 +5,7 @@ pluralizelisttitles = false
 
 theme = "art-portfolio"
 
-googleAnalytics = ${{ env.ANALYTICS_ID }}
+googleAnalytics = $env.ANALYTICS_ID
 
 [module]
   [[module.mounts]]
