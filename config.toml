@@ -5,8 +5,6 @@ pluralizelisttitles = false
 
 theme = "art-portfolio"
 
-googleAnalytics = 'G-DRX4KKRZGC'
-
 [module]
   [[module.mounts]]
   source = 'content'
