@@ -8,7 +8,3 @@ layout: 'copyright'
 ---
 
 ## Copyright Statement
-
-Copyright © 2022, Lina Habazi. All rights reserved.
-
-No image or information, including but not limited to the Artist's name, biography, artwork details, or CV may be reproduced in any form without the express permission of Lina Habazi.
