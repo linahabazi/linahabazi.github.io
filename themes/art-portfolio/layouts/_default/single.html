@@ -1,13 +1,13 @@
 {{ define "main" }}
-    {{ if in .Page "portfolio" }}
+    {{ if in .Page "selected-works" }}
     <div class="artworkPage">
         <div class="pageNav">
-            {{ if in .Next "portfolio" }}
+            {{ if in .Next "selected-works" }}
                 <a href="{{with .Next}}{{.Permalink}}{{end}}">Prev</a>
             {{ else }}
                 <div class="disabled">Prev</div>
             {{ end }}
-            {{ if in .Prev "portfolio" }}
+            {{ if in .Prev "selected-works" }}
                 <a href="{{with .Prev}}{{.Permalink}}{{end}}">Next</a>
             {{ else }}
                 <div class="disabled">Next</div>

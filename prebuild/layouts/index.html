@@ -1,9 +1,9 @@
-{{ $yaml_template := resources.Get "portfolio.yaml" }}
+{{ $yaml_template := resources.Get "selected-works.yaml" }}
 {{ with resources.GetRemote .Site.Data.resources.urls.portfolioAPI }}
     {{ $data := unmarshal .Content }}
     {{ $items := $data.Items }}
     {{ range $items }}
-        {{ $filename := printf "portfolio/%s.md" (urlize .id) }} 
+        {{ $filename := printf "selected-works/%s.md" (urlize .id) }} 
         {{ $resource := resources.ExecuteAsTemplate $filename . $yaml_template }}
         {{ $file := $resource.RelPermalink }} 
     {{ end }}

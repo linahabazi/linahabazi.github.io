@@ -11,8 +11,8 @@ theme = "art-portfolio"
   target = 'content'
 
   [[module.mounts]]
-  source = 'prebuild/public/portfolio'
-  target = 'content/portfolio'
+  source = 'prebuild/public/selected-works'
+  target = 'content/selected-works'
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -20,15 +20,16 @@ theme = "art-portfolio"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-  mainSections = ["portfolio"]
+  mainSections = ["selected-works"]
   test = true
 
   # Nav links in the side bar
 
   [[params.navlinks]]
-  name = "portfolio"
-  displayName = "Portfolio"
-  url = "/portfolio"
+  name = "selected-works"
+  title = "Selected Works"
+  displayName = "Selected Works"
+  url = "/selected-works"
   draft = false
 
   [[params.navlinks]]

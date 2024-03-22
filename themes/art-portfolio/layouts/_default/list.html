@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ if eq .Title "Portfolio" }}
-        {{ partial "portfolio.html" . }}
+    {{ if in .Page "selected-works" }}
+        {{ partial "selected-works.html" . }}
     {{ end }}
 {{ end }}
