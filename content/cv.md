@@ -35,8 +35,9 @@ layout: 'cv'
 
 ##### TALKS
 
-**2021** In the Sun Artist Talk  
-**2020** UHMSA Podcast: The Intersection of Muslims and Art  
+**2023** A Woman in Palestine, Rice University  
+**2021** In the Sun Artist Talk, Station Museum of Contemporary Art  
+**2020** UHMSA Podcast: The Intersection of Muslims and Art 
 
 ##### PRESS
 
