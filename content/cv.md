@@ -15,6 +15,8 @@ layout: 'cv'
 
 ##### EXHIBITIONS
 
+**2024** Falasteen Arts Festival, Houston, TX
+**2024** Posters for Palestine, Houston, TX
 **2022** The Houston Artist Speaks Through Grids  
 **2022** The Other Side, Winter Street Studios, Houston, TX  
 **2021** In the Sun, Station Museum of Contemporary Art, Houston, TX  
@@ -35,7 +37,7 @@ layout: 'cv'
 
 ##### TALKS
 
-**2023** A Woman in Palestine, Rice University  
+**2023** A Woman in Palestine, Palestine Lives at Rice University  
 **2021** In the Sun Artist Talk, Station Museum of Contemporary Art  
 **2020** UHMSA Podcast: The Intersection of Muslims and Art 
 
