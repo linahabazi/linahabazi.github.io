@@ -9,4 +9,4 @@ layout: 'copyright'
 
 ## Copyright Statement
 
-No content found on this website, including but not limited to the Artist's name, biography, artwork details, or CV, may be reproduced in any form without the express permission of Lina Habazi. Unauthorized use of this content will not be tolerated.
+No content found on this website, including but not limited to the Artist's name, biography, artwork images, artwork details, or CV, may be reproduced in any form without the express permission of Lina Habazi. Unauthorized use of this content will not be tolerated.
