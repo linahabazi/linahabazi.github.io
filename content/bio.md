@@ -5,6 +5,7 @@ draft: false
 imageId: 'bio/2022-headshot.PNG'
 type: 'bio'
 layout: "bio"
+instagram: lin.a.krm
 ---
 
 #### Lina Habazi

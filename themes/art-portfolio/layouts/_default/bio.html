@@ -1,6 +1,7 @@
 
 {{ define "main" }}
 {{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.imageId }}
+{{ $instagramUrl := print "https://instagram.com/" .Params.instagram }}
 
   <div class="bio-container">
     <div class="bio">
@@ -12,6 +13,6 @@
     <div class="bottomNote">
       <span class="bold italic">For the nerds:</span> I coded and styled this website myself in Hugo, a static website engine, and SCSS. You can view my code on <span class="bold underline"><a href="https://github.com/linahabazi/linahabazi.github.io" target="_blank">Github</a></span>.
     </div>
-    <div class="bottomNote">Instagram: <span class="bold underline"><a href="https://instagram.com/lina.hbz" target="_blank">@lina.hbz</a></span></div>
+    <div class="bottomNote">Find me on <span class="bold underline"><a href="{{ $instagramUrl }}" target="_blank">Instagram</a></span></div>
   </div>
 {{ end }}
