@@ -74,7 +74,14 @@ $dark-accent: #13a38b;
 $fonts: "Lato|Raleway|Roboto";
 
 @import url("https://fonts.googleapis.com/css?family=#{$fonts}");
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Francois+One&family=Hammersmith+One&family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+@font-face {
+  font-family: 'Jomhuria';
+  src: url('../fonts/Jomhuria-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 //--- imports ---//
 
