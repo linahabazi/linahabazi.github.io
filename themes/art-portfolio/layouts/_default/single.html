@@ -1,19 +1,10 @@
 {{ define "main" }}
-    {{ if in .Page "selected-works" }}
-    <div class="artworkPage">
-        <div class="pageNav">
-            {{ if in .Next "selected-works" }}
-                <a href="{{with .Next}}{{.Permalink}}{{end}}">Prev</a>
-            {{ else }}
-                <div class="disabled">Prev</div>
-            {{ end }}
-            {{ if in .Prev "selected-works" }}
-                <a href="{{with .Prev}}{{.Permalink}}{{end}}">Next</a>
-            {{ else }}
-                <div class="disabled">Next</div>
-            {{ end }}
-        </div>
-        {{ partial "artworkDetail.html" . }}
+    <div class="singlePage">
+        {{ partial "pageNav.html" . }}
+        {{ if eq .CurrentSection.Title "Selected-works" }}
+            {{ partial "artworkDetail.html" . }}
+        {{ else if eq .CurrentSection.Title "Blog" }}
+            {{ partial "blogPost.html" . }}
+        {{ end }}
     </div>
-    {{ end }}
 {{ end }}

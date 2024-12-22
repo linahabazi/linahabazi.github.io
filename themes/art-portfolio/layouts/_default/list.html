@@ -1,5 +1,7 @@
 {{ define "main" }}
-    {{ if in .Page "selected-works" }}
+    {{ if eq .Page.Title "Selected-works" }}
         {{ partial "selected-works.html" . }}
+    {{ else if eq .Page.Title "Blog" }}
+        {{ partial "blog.html" . }}
     {{ end }}
 {{ end }}

@@ -1,0 +1,12 @@
+<div class="pageNav">
+    {{ if .NextInSection }}
+        <a href="{{with .NextInSection}}{{.Permalink}}{{end}}">Prev</a>
+    {{ else }}
+        <div class="disabled">Prev</div>
+    {{ end }}
+    {{ if .PrevInSection }}
+        <a href="{{with .PrevInSection}}{{.Permalink}}{{end}}">Next</a>
+    {{ else }}
+        <div class="disabled">Next</div>
+    {{ end }}
+</div>

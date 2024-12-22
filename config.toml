@@ -62,6 +62,13 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   url = "/reading"
   draft = true
 
+  [[params.navlinks]]
+  name = "blog"
+  title = "Blog"
+  displayName = "Blog"
+  url = "/blog"
+  draft = false
+
   [[params.sociallinks]]
   name = "Instagram"
   url = "instagram.com"
