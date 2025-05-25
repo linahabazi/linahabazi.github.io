@@ -54,7 +54,7 @@ jobs:
             --minify \
             --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1@8c74d440fd3651e6606f4e8eb9e89dfd805a0cc9
+        uses: actions/upload-pages-artifact@8c74d440fd3651e6606f4e8eb9e89dfd805a0cc9
         with:
           path: ./public
 
