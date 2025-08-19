@@ -9,10 +9,6 @@ layout: 'cv'
 
 ## Cirriculum Vitae
 
-##### EDUCATION
-
-**2020** B.S. Computer Science, Studio Art Minor, University of Houston, Houston, TX  
-
 ##### EXHIBITIONS
 
 **2024** Falasteen Arts Festival, Houston, TX  
@@ -47,3 +43,10 @@ layout: 'cv'
 **2021** Houstonia, Station Museum Takes An Artistic Stand on Palestinian Solidarity  
 **2021** Lamar Life, Palestine Resistance Through Art 
 
+##### EXPERIENCE
+
+**2025** Creative Director, We Love Life: Palestine Benefit Weekend
+
+##### EDUCATION
+
+**2020** B.S. Computer Science, Studio Art Minor, University of Houston, Houston, TX  
