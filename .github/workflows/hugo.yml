@@ -50,7 +50,7 @@ jobs:
           HUGO_ENV: production
           HUGO_GOOGLEANALYTICS: ${{ vars.GOOGLE_ANALYTICS_MEASUREMENT_ID }}
         run: |
-          hugo -s . && hugo \
+          hugo -s prebuild && hugo \
             --minify \
             --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
