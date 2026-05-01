@@ -1,9 +1,7 @@
 baseURL = 'https://www.linahabazi.com'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Lina Habazi'
 pluralizelisttitles = false
-
-theme = "art-portfolio"
 
 [module]
   [[module.mounts]]

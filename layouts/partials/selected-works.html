@@ -1,6 +1,6 @@
 <div class="portfolio">
   {{ range .Pages }}
-  {{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.image }}
+  {{ $imagePath := print hugo.Data.resources.urls.s3ImagePath .Params.image }}
 
     <div class="listArtwork {{.Params.id}}">
       <a class="artworkImage imageLink" href="{{.Permalink}}" oncontextmenu="return false;">
