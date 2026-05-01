@@ -1,6 +1,6 @@
 
 {{ define "main" }}
-{{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.imageId }}
+{{ $imagePath := print hugo.Data.resources.urls.s3ImagePath .Params.imageId }}
 {{ $instagramUrl := print "https://instagram.com/" .Params.instagram }}
 
   <div class="bio-container">

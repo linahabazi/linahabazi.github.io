@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $imagePath := print .Site.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
+{{ $imagePath := print hugo.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
 
 <div class="bannerArt">
     <img class="backgroundImage" src="{{ $imagePath }}" />

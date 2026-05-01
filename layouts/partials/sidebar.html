@@ -1,6 +1,6 @@
 {{ $imagePath := "" }}
 {{ with .Site.GetPage "/" }}
-    {{ $imagePath = print .Site.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
+    {{ $imagePath = print hugo.Data.resources.urls.s3ImagePath .Params.bannerImagePath }}
 {{ end }}
 {{ $title := lower .Title }}
 
