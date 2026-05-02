@@ -4,7 +4,6 @@
 ```
 linahabazi.github.io/
 ├── assets/                  # Files that need to be processed by Hugo Pipes (e.g. SCSS to CSS)
-│   └── selected-works.yaml  ### Template for dynamic md content built in index.html from dynamodb data
 ├── content/                 # Static markdown content
 ├── data/                    # Data files for site generation
 ├── layouts/                 # Page and section layout html files
